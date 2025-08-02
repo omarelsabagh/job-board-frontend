@@ -36,7 +36,7 @@ export default function RegisterPage() {
           email: variables.email,
           password: variables.password,
         });
-        router.push("/");
+        router.push("/jobs");
       } catch (err) {
         console.error("Auto-login failed", err);
         router.push("/login"); // fallback to login manually
